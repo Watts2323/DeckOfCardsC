@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		196503E1218A926F00507181 /* XMWCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 196503E0218A926F00507181 /* XMWCard.m */; };
+		19D9CEDB218B71F900CDE286 /* XMWCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D9CEDA218B71F900CDE286 /* XMWCardController.m */; };
+		19D9CEDF218B9ED400CDE286 /* XMWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D9CEDE218B9ED400CDE286 /* XMWViewController.m */; };
 		19F1C35A218A8601002F34CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F1C359218A8601002F34CA /* AppDelegate.m */; };
 		19F1C360218A8601002F34CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F1C35E218A8601002F34CA /* Main.storyboard */; };
 		19F1C362218A8602002F34CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F1C361218A8602002F34CA /* Assets.xcassets */; };
@@ -18,6 +20,10 @@
 /* Begin PBXFileReference section */
 		196503DF218A926F00507181 /* XMWCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMWCard.h; sourceTree = "<group>"; };
 		196503E0218A926F00507181 /* XMWCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMWCard.m; sourceTree = "<group>"; };
+		19D9CED9218B71F900CDE286 /* XMWCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMWCardController.h; sourceTree = "<group>"; };
+		19D9CEDA218B71F900CDE286 /* XMWCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMWCardController.m; sourceTree = "<group>"; };
+		19D9CEDD218B9ED400CDE286 /* XMWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMWViewController.h; sourceTree = "<group>"; };
+		19D9CEDE218B9ED400CDE286 /* XMWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMWViewController.m; sourceTree = "<group>"; };
 		19F1C355218A8601002F34CA /* DeckOfCardsC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCardsC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F1C358218A8601002F34CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19F1C359218A8601002F34CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +54,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		19D9CEDC218B71FE00CDE286 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				19D9CED9218B71F900CDE286 /* XMWCardController.h */,
+				19D9CEDA218B71F900CDE286 /* XMWCardController.m */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		19D9CEE0218B9EDD00CDE286 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				19D9CEDD218B9ED400CDE286 /* XMWViewController.h */,
+				19D9CEDE218B9ED400CDE286 /* XMWViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		19F1C34C218A8601002F34CA = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +95,8 @@
 				19F1C36F218A8699002F34CA /* Storyboard */,
 				19F1C367218A8603002F34CA /* main.m */,
 				196503E2218A927300507181 /* Model */,
+				19D9CEDC218B71FE00CDE286 /* ModelController */,
+				19D9CEE0218B9EDD00CDE286 /* ViewController */,
 			);
 			path = DeckOfCardsC;
 			sourceTree = "<group>";
@@ -166,6 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D9CEDB218B71F900CDE286 /* XMWCardController.m in Sources */,
+				19D9CEDF218B9ED400CDE286 /* XMWViewController.m in Sources */,
 				19F1C368218A8603002F34CA /* main.m in Sources */,
 				196503E1218A926F00507181 /* XMWCard.m in Sources */,
 				19F1C35A218A8601002F34CA /* AppDelegate.m in Sources */,

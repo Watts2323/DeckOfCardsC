@@ -26,9 +26,19 @@
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)dictionary
 {
-    NSString *suit = dictionary[@"suit"];
-    NSString *image = dictionary[@"image"];
+    NSString *suit = dictionary [[XMWCard suitTitleKey ]];
+    NSString *image = dictionary[[XMWCard imageTitleKey]];
     return [self initWithSuit:suit image:image];
+}
+
++(NSString *) suitTitleKey;
+{
+    return @"suit";
+}
+
++(NSString *) imageTitleKey;
+{
+    return @"image";
 }
 
 @end
