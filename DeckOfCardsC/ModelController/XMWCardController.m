@@ -14,7 +14,7 @@
 @implementation XMWCardController
 
 //SharedInstance/Singelton
-+ (XMWCardController *) shared {
++ (instancetype) sharedController {
     static XMWCardController *shared = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -23,7 +23,7 @@
     return shared;
 }
 
--(NSURL *)baseURLAsString
++(NSURL *)baseUrl
 {
     return [NSURL URLWithString:@"https://deckofcardsapi.com/api/deck/new/draw"];
 }
@@ -34,10 +34,9 @@
 + (void)drawNewCard:(void (^)(NSArray<XMWCard *> * _Nonnull, NSError * _Nonnull))completion
 {
     //Construct URL
-    NSURL *baseURL = [[NSURL alloc]initWithString:baseURL];
     
     //Components
-    NSURLComponents *components = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:TRUE];
+    NSURLComponents *components = [NSURLComponents componentsWithURL: [XMWCardController baseUrl] resolvingAgainstBaseURL:TRUE];
     NSURLQueryItem *searchQueryItem = [NSURLQueryItem queryItemWithName:@"count" value:@"1"];
     
     components.queryItems = @[searchQueryItem];

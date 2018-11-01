@@ -1,5 +1,5 @@
 //
-//  XMWViewController.h
+//  XMWCardViewController.h
 //  DeckOfCardsC
 //
 //  Created by Xavier on 11/1/18.
@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMWCardViewController.h"
+#import "XMWCard.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XMWViewController : UIViewController
+@interface XMWCardViewController : UIViewController
 
 @end
 

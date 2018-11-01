@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="KPC-fS-UhF">
             <objects>
-                <viewController id="LZ4-x9-kXT" sceneMemberID="viewController">
+                <viewController id="LZ4-x9-kXT" customClass="XMWCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WRN-BY-rsd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,9 @@
                                         <rect key="frame" x="59" y="370.5" width="123" height="33"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="Draw a Card🃏"/>
+                                        <connections>
+                                            <action selector="drawCardButtonTapped:" destination="LZ4-x9-kXT" eventType="touchUpInside" id="ril-0t-dvp"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekN-7H-uZu">
                                         <rect key="frame" x="99" y="413.5" width="43" height="20.5"/>
@@ -50,6 +53,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="etA-WB-K0B"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="b1v-qX-VSx" id="Y7o-PR-tJO"/>
+                        <outlet property="drawCardButton" destination="iaR-Cw-CiZ" id="aHV-lk-Qtq"/>
+                        <outlet property="suitLabel" destination="ekN-7H-uZu" id="uRo-bM-Tkl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBH-fw-tZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
