@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		196503E1218A926F00507181 /* XMWCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 196503E0218A926F00507181 /* XMWCard.m */; };
 		19F1C35A218A8601002F34CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F1C359218A8601002F34CA /* AppDelegate.m */; };
 		19F1C360218A8601002F34CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F1C35E218A8601002F34CA /* Main.storyboard */; };
 		19F1C362218A8602002F34CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F1C361218A8602002F34CA /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		196503DF218A926F00507181 /* XMWCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMWCard.h; sourceTree = "<group>"; };
+		196503E0218A926F00507181 /* XMWCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMWCard.m; sourceTree = "<group>"; };
 		19F1C355218A8601002F34CA /* DeckOfCardsC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCardsC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F1C358218A8601002F34CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19F1C359218A8601002F34CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		196503E2218A927300507181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				196503DF218A926F00507181 /* XMWCard.h */,
+				196503E0218A926F00507181 /* XMWCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		19F1C34C218A8601002F34CA = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 				19F1C36E218A867D002F34CA /* Resources */,
 				19F1C36F218A8699002F34CA /* Storyboard */,
 				19F1C367218A8603002F34CA /* main.m */,
+				196503E2218A927300507181 /* Model */,
 			);
 			path = DeckOfCardsC;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 		19F1C34D218A8601002F34CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XMW;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Xavier ios dev";
 				TargetAttributes = {
@@ -153,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F1C368218A8603002F34CA /* main.m in Sources */,
+				196503E1218A926F00507181 /* XMWCard.m in Sources */,
 				19F1C35A218A8601002F34CA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

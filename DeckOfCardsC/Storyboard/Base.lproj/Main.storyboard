@@ -1,10 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZ4-x9-kXT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KPC-fS-UhF">
+            <objects>
+                <viewController id="LZ4-x9-kXT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRN-BY-rsd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dO6-g4-bLX">
+                                <rect key="frame" x="67" y="111" width="241" height="434"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b1v-qX-VSx">
+                                        <rect key="frame" x="0.0" y="0.0" width="241" height="360.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaR-Cw-CiZ">
+                                        <rect key="frame" x="59" y="370.5" width="123" height="33"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Draw a Card🃏"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekN-7H-uZu">
+                                        <rect key="frame" x="99" y="413.5" width="43" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="b1v-qX-VSx" firstAttribute="leading" secondItem="dO6-g4-bLX" secondAttribute="leading" id="6J8-Sg-IN0"/>
+                                    <constraint firstItem="ekN-7H-uZu" firstAttribute="leading" secondItem="dO6-g4-bLX" secondAttribute="leading" constant="99" id="9ea-WN-cXY"/>
+                                    <constraint firstItem="iaR-Cw-CiZ" firstAttribute="leading" secondItem="dO6-g4-bLX" secondAttribute="leading" constant="59" id="d7S-12-B9p"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="etA-WB-K0B" firstAttribute="bottom" secondItem="dO6-g4-bLX" secondAttribute="bottom" constant="122" id="VuD-6p-lQg"/>
+                            <constraint firstItem="dO6-g4-bLX" firstAttribute="top" secondItem="etA-WB-K0B" secondAttribute="top" constant="91" id="a3P-7F-3KT"/>
+                            <constraint firstItem="dO6-g4-bLX" firstAttribute="leading" secondItem="etA-WB-K0B" secondAttribute="leading" constant="67" id="e40-DY-6CL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="etA-WB-K0B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBH-fw-tZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="65.217391304347828"/>
+        </scene>
+    </scenes>
 </document>
